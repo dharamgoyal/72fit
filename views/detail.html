@@ -1,0 +1,302 @@
+<div class="customize-color">
+  <div class="container">
+    <div class="row innerPageHeader">
+      <div class="col s12 m2 center">
+		<a href="#/"><img src="assets/img/logo-small.png" class="responsive-img marT8"></a>
+	  </div>
+      <div class="col s12 m7">
+      <form>
+        <div class="row no-margin">
+          <div class="col s12 m6 l4 city-select">
+            <!-- Dropdown Trigger -->
+            <select ng-model="data.city">
+              <option value=""  selected>Choose your city</option>
+              <option value="Indore">Indore</option>
+              <option value="Bhopal">Bhopal</option>
+              <option value="Gwalior">Gwalior</option>
+            </select>
+          </div>
+        </div>
+        <div class="row no-margin">
+          <div class="input-field searchBox no-margin">
+            <div class="col s12 m7 l7"  >
+              <input type="text" class="searchInput" ng-model="data.name" id="search" placeholder="Search for doctor" list="doctorlist" autocomplete="off" >
+                  <datalist id="doctorlist">
+                     <option  data-ng-repeat="n in doctors" value="{{n.drname}}">{{n.drname}}</option>
+                  </datalist>
+            </div>
+            <div class="col s8 m3 l3">
+              <select>
+                <option value="" disabled selected>Locality</option>
+                <option value="1">Option1</option>
+                <option value="2">Option2</option>
+                <option value="3">Option3</option>
+              </select>
+            </div>
+            <div class="col s4 m2 l2">
+                <button ng-click="drSearch(data);" class="btn" type="submit">
+                    <i class="mdi-action-search"></i>    
+                </button> 
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      
+      </form>
+      </div>
+      <div class="col s12 l3 innerPageNav">
+      	<nav class="customize-color z-depth-no">
+          <div class="nav-wrapper">
+            <ul id="nav-mobile" class="right">
+              <li><a href="#">Get Listed</a></li>
+              <li><a href="#">Login</a></li>
+              <li><a href="#">Sign up</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  
+  <div class="row">
+  	<div class="col s12 m3 siteBarQuad">
+      <h6 class="txtBold">Dermatologist in indore</h6>
+      <div class="divider"></div>
+      <ul>
+      	<li>
+          <label><a href="#">Dr. GR</a></label>
+        </li>
+      	<li>
+          <label><a href="#">Dr. Anand Dixit</a></label>
+        </li>
+        <li>
+          <label><a href="#">Dr. Prafful Shrivastav</a></label>
+        </li>
+        <li>
+          <label><a href="#">Dr. Amit Thakur</a></label>
+        </li>
+        <li>
+          <label><a href="#">Dr.Ankit Patidar</a></label>
+        </li>
+        <li>
+          <label><a href="#">Dr. Pavan Shinde</a></label>
+        </li>
+        <li>
+          <label><a href="#">Dr. Ajay Soni</a></label>
+        </li>
+        <li>
+          <label><a href="#">Dr. Vijay</a></label>
+        </li>
+        <li>
+          <label><a href="#">Dr. Manish Jain</a></label>
+        </li>
+        <div id="showMore" style="display:none">
+          <li>
+            <label><a href="#">Dr. GR</a></label>
+          </li>
+          <li>
+            <label><a href="#">Dr. Anand Dixit</a></label>
+          </li>
+          <li>
+            <label><a href="#">Dr. Prafful Shrivastav</a></label>
+          </li>
+          <li>
+            <label><a href="#">Dr. Amit Thakur</a></label>
+          </li>
+          <li>
+            <label><a href="#">Dr.Ankit Patidar</a></label>
+          </li>
+          <li>
+            <label><a href="#">Dr. Pavan Shinde</a></label>
+          </li>
+          <li>
+            <label><a href="#">Dr. Ajay Soni</a></label>
+          </li>
+          <li>
+            <label><a href="#">Dr. Vijay</a></label>
+          </li>
+          <li>
+            <label><a href="#">Dr. Manish Jain</a></label>
+          </li>
+        </div>
+        <li>
+          <label><a href="#" id="showMoreBtn" class="less">View more</a></label>
+        </li>
+      </ul>
+    </div>
+  	<div class="col s12 m9">
+      <div>&nbsp;</div>
+      <div>
+        <ul class="collection no-bdr">
+          <li class="collection-item avatar" ng-repeat="detail in details ">
+            <img src="assets/images/dummy-1.jpg" alt="" class="circle">
+            <div class="row">
+              <div class="col s12 m8">
+                <a  class="title">{{detail.drname}}</a>
+                <p>MBBS, MD - Dermatology<br>{{detail.experience}} years experience</p>
+                <div class="divider marTB10"></div>
+                <p>Dermatologist/Cosmetologist Cosmetic Skin Care Clinic / Koramangala Women's Clinic </p>
+                <div class="spaceH"></div>
+              </div>
+              <div class="col s12 m4 marTB10">
+                <div class="center"><a ><i class="mdi-action-thumb-up"></i> <span class="fontS20">45</span> Recommendations</a></div>
+                <div class="spaceH"></div>
+                <!--<div class="center"><a href="#" class="btn customize-btn waves-effect">Book Appointment</a></div>-->
+              </div>
+              <div class="clearfix"></div>
+              <div class="infoQuad">
+              	<h6 class="no-margin txtBold fontS20">Info</h6>
+                <div class="marTB20">Dr. S C Rajendran is a Dermatologist and Cosmetologist in Koramangala, Bangalore and has an experience of 31 years in these fields. Dr. S C Rajendran practices <a>more...</a></div>
+                <div class="divider marTB20"></div>
+                <div class="row">
+                	<div class="col s12 m6 addressQuad">
+                        <p><span class="txtBold">{{detail.speciality}}</span><br>{{detail.address}}</p>
+                    </div>
+                	<div class="col s12 m6">
+                    	<p class="left marR5"><i class="mdi-device-access-time"></i></p>
+                        <!--<p><span class="txtBold">MON-SAT</span><br>10:00AM-2:00PM, 4:00PM-7:30PM</p>-->					<p>{{list.time}}</p>
+                    </div>
+                </div>
+                <div class="divider marTB20"></div>
+                <div class="row">
+                	<div class="col s12 m12"><p class="left marR5 txtBold"><i class="mdi-maps-local-hospital"></i> Services</p></div>
+                	<div class="col s12 m6">
+                    	<ul class="list-disk">
+                        	<li>Acne Treatment</li>
+                        	<li>Scar Treatment</li>
+                        	<li>Laser Resurfacing</li>
+                        	<li>Laser Hair Removal</li>
+                        	<li>Tattoo Removal</li>
+                        	<li>Dermaroller</li>
+                        	<li>Photofacial</li>
+                        </ul>
+                    </div>
+                	<div class="col s12 m6">
+                    	<ul class="list-disk">
+                        	<li>Sun Spots, Age Spots, And Other Pigmented Lesions</li>
+                        	<li>Skin Care, Anti Aging Treatments</li>
+                        	<li>Laser</li>
+                        	<li>Chemical Peel</li>
+                        	<li>Hair Transplant</li>
+                        	<li>Wrinkle Treatment</li>
+                        	<li>Radiofrequency</li>
+                            <li>Vitiligo Treatment</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="divider marTB20"></div>
+                <div class="row">
+                	<div class="col s12 m12"><p class="left marR5 txtBold"><i class="mdi-social-school"></i> About</p></div>
+                	<div class="col s12 m12">
+                    	<div>&nbsp;</div>
+                    	<p class="txtBold marL20">Specialization</p>
+                    	<ul class="list-disk">
+                        	<li>Dermatologist</li>
+                        	<li>Cosmetologist</li>
+                        </ul>
+                    </div>
+                	<div class="col s12 m12">
+                    <div>&nbsp;</div>
+                    	<p class="txtBold marL20">Education</p>
+                        <ul class="list-disk">
+                        	<li> MBBS - St.Johns Institute Of Medical Sciences Bangalore</li>
+                        	<li> MD - Dermatology - Bangalore Medical College and Research<br> Institute, Bangalore</li>
+                        </ul>
+                    </div>
+                	<div class="col s12 m12">
+                    	<div>&nbsp;</div>
+	                    <p class="txtBold marL20">Experience</p>
+                    	<ul class="list-disk">
+                        	<li>1982 - 1999 Former prof. & HOD of Dermatoloy at St. John's Medical College & Hospital</li>
+                        	<li>Former President at Bangalore Dermatology Society</li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="grey lighten-2">
+  <div class="container">
+  	<div class="row paddTB10 no-margin">
+      <div class="col s12 m6 l4">Call  9923574890 for any appointment related query <br><a href="#">Click here</a> to cancel your appointment</div>
+      <div class="col s12 m6 l6"><img src="assets/img/bit-graph.png" class="responsive-img" alt=""></div>
+    </div>
+  </div>
+</div>
+<footer class="grey darken-4">
+  <div class="container white-text">
+  	<div>&nbsp;</div>
+    <div>&nbsp;</div>
+  	<div class="row">
+      <div class="col s12 m3 l2">
+        <h5>About Us</h5>
+        <ul>
+          <li><a href="#">who we are?</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Locations</a></li>
+        </ul>
+      </div>
+      <div class="col s12 m3 l2">
+        <h5>For Doctors</h5>
+        <ul>
+          <li><a href="#">For Doctors</a></li>
+          <li><a href="#">Practice Management</a></li>
+          <li><a href="#">Software EMR</a></li>
+          <li><a href="#">Software Appointment</a></li>
+          <li><a href="#">Scheduling Software</a></li>
+          <li><a href="#">Medical Billing Software</a></li>
+          <li><a href="#">Patient SMS Software</a></li>
+        </ul>
+      </div>
+      <div class="col s12 m3 l2">
+        <h5>Support</h5>
+        <ul>
+          <li><a href="#">Know more</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="col s12 m3 l3">
+        <h5>Connect</h5>
+        <ul class="list-inline">
+          <li><a href="#" class="fb-icon"></a></li>
+          <li><a href="#" class="twitter-icon"></a></li>
+          <li><a href="#" class="in-icon"></a></li>
+          <li><a href="#" class="gplus-icon"></a></li>
+        </ul>
+      </div>
+      <div class="col s12 m4 l3">
+        <h5>&nbsp;</h5>
+        <a href="#" class="btn white black-text">App Available on <img src="assets/img/apple-24.png"> <img src="assets/img/google-play-24.png"></a>
+      </div>
+    </div>
+    <div class="footer-copyright">&copy; 2015, 72fit.com. All Rights Reserved.</div>
+  </div>
+</footer>
+<script>
+$(document).ready(function() {
+    $('select').material_select();
+	$("#showMoreBtn").click(function(){
+		//
+		//$("#showMoreBtn").html("");
+		
+		if($(this).hasClass("less")) {
+            $(this).removeClass("less");
+            $(this).html("Less more");
+			$("#showMore").show("slow");
+        } else {
+            $(this).addClass("less");
+            $(this).html("View more");
+			$("#showMore").hide("fast");
+        }
+	});
+	
+});
+</script>

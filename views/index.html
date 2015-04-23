@@ -1,0 +1,147 @@
+<div class="customize-color">
+  <div class="container">
+    <nav class="customize-color z-depth-no">
+      <div class="nav-wrapper">
+        <ul id="nav-mobile" class="right">
+          <li><a href="#">What is this Service</a></li>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Sign up</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="row">
+      <div class="col s12">
+        <div class="center">
+          <img src="assets/img/logo-big.png" alt="" title="" class="responsive-img">
+        </div>
+      </div>
+      <div class="col s12 m8 offset-l2">
+       <form class="form-horizontal" >
+        <div class="row no-margin">
+          <div class="col s12 m3 city-select">
+            <!-- Dropdown Trigger -->
+            <select ng-model="city">
+              <option value=""  selected>Choose your city</option>
+              <option value="indore">Indore</option>
+              <option value="bhopal">Bhopal</option>
+              <option value="gwalior">Gwalior</option>
+            </select>
+          </div>
+        </div>
+        <div class="row no-margin">
+          <div class="input-field searchBox no-margin">
+         
+            <div class="col s12 m7 l7">
+              <input type="text" class="searchInput" ng-model="drname" id="search" placeholder="Search for doctor" list="doctorlist" autocomplete="off">
+                  <datalist id="doctorlist">
+                     <option  data-ng-repeat="n in doctors" value="{{n.drname}}">{{n.drname}}</option>
+                  </datalist>
+            </div>
+            <div class="col s8 m3 l3">
+              <select >
+                <option value="" disabled selected>Locality</option>
+                <option value="1">Option1</option>
+                <option value="2">Option2</option>
+                <option value="3">Option3</option>
+              </select>
+            </div>
+            <div class="col s4 m2 l2">
+              
+            <button ng-click="drSearch()"
+                    class="btn"
+                    type="submit">
+                <i class="mdi-action-search"></i>    
+            </button>   
+            </div>
+            <div class="clearfix"></div>
+          
+          </div>
+        </div>
+        <div class="row stepsQuad">
+        <div class="col s4"><h6>Find a Doctor</h6></div>
+        <div class="col s4"><h6>Book an Appointment</h6></div>
+        <div class="col s4"><h6>Meet the Doctor</h6></div>
+      </div></form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h1 class="pageTitle">Online Profile</h1>
+  <div class="row">
+  	<div class="col s12 m8">
+      <p>Establish your online presence and get more appointments, Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      <button class="btn waves-effect customize-btn">Get Listed</button>
+      <div>&nbsp;</div>
+      <div>&nbsp;</div>
+      <img src="assets/img/site-on-laptop.png" class="responsive-img" alt="">
+      
+    </div>
+    <div class="col s12 m4">
+      <img src="assets/img/find-best-dr.png" class="responsive-img" alt="">
+    </div>
+  </div>
+</div>
+<div class="grey lighten-2">
+  <div class="container">
+  	<div class="row paddTB10 no-margin">
+      <div class="col s12 m6 l4">Call  9923574890 for any appointment related query <br><a href="#">Click here</a> to cancel your appointment</div>
+      <div class="col s12 m6 l6"><img src="assets/img/bit-graph.png" class="responsive-img" alt=""></div>
+    </div>
+  </div>
+</div>
+<footer class="grey darken-4">
+  <div class="container white-text">
+  	<div>&nbsp;</div>
+    <div>&nbsp;</div>
+  	<div class="row">
+      <div class="col s12 m3 l2">
+        <h5>About Us</h5>
+        <ul>
+          <li><a href="#">who we are?</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Locations</a></li>
+        </ul>
+      </div>
+      <div class="col s12 m3 l2">
+        <h5>For Doctors</h5>
+        <ul>
+          <li><a href="#">For Doctors</a></li>
+          <li><a href="#">Practice Management</a></li>
+          <li><a href="#">Software EMR</a></li>
+          <li><a href="#">Software Appointment</a></li>
+          <li><a href="#">Scheduling Software</a></li>
+          <li><a href="#">Medical Billing Software</a></li>
+          <li><a href="#">Patient SMS Software</a></li>
+        </ul>
+      </div>
+      <div class="col s12 m3 l2">
+        <h5>Support</h5>
+        <ul>
+          <li><a href="#">Know more</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="col s12 m3 l3">
+        <h5>Connect</h5>
+        <ul class="list-inline">
+          <li><a href="#" class="fb-icon"></a></li>
+          <li><a href="#" class="twitter-icon"></a></li>
+          <li><a href="#" class="in-icon"></a></li>
+          <li><a href="#" class="gplus-icon"></a></li>
+        </ul>
+      </div>
+      <div class="col s12 m4 l3">
+        <h5>&nbsp;</h5>
+        <a href="#" class="btn white black-text">App Available on <img src="assets/img/apple-24.png"> <img src="assets/img/google-play-24.png"></a>
+      </div>
+    </div>
+    <div class="footer-copyright">&copy; 2015, 72fit.com. All Rights Reserved.</div>
+  </div>
+</footer>
+
+<script>
+$(document).ready(function() {
+    $('select').material_select();
+});
+</script>
