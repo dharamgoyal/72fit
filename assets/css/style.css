@@ -11,6 +11,7 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i{height:4
 .city-select .select-wrapper{background:url("../img/map-marker.png") no-repeat scroll left center;padding-left:20px;margin-top:0}
 .city-select .mdi-navigation-arrow-drop-down:before{content:"\e89e"}
 .searchBox .searchInput{background-color:#fff;border-radius:4px 0 0 4px;padding:0 10px}
+.searchBox .localityInput{background-color:#fff;padding:0 6px}
 .searchBox .select-wrapper{margin-top:0}
 .searchBox .select-wrapper input.select-dropdown{background-color:#dadbdd;padding-left:10px}
 .searchBox .mdi-navigation-arrow-drop-down:before{content:"\e89e"}
